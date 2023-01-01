@@ -1,0 +1,85 @@
+
+h2{
+    margin: 32px 0 0 0;
+    color: white;
+
+}
+h3{
+    margin: 16px 0 0 0;
+    color: white;
+
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    gap: 8px;
+
+    padding:32px 8px;
+    background-color: rgba(0, 0, 0, 0.322);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+label{
+    margin: 8px 0 0 4px;
+    color: white;
+
+}
+input, textarea{
+    padding: 8px;
+    outline: none;
+    color: rgb(158, 158, 158);
+    font-weight: 700;
+    border-radius: 4px;
+}
+input:focus, textarea:focus{
+    color: black;
+    background-color: antiquewhite;
+}
+#smallRight{
+    color: white;
+    text-align: right;
+    padding-right: 4px;
+}
+#groupButtons{
+    display: flex;
+    justify-content: space-around;
+    gap: 16PX;
+}
+button{
+    border-radius: 4px;
+    padding: 8px 32px;
+    margin-top: 32px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    width: 100%;
+
+    font-weight: 800;
+}
+button.primary{
+    background-color: blue;
+    color: white;
+}
+button.primary:hover{
+    filter: brightness(0.9);
+}
+
+button.secondary{
+    background-color: white;
+    width: max-content;
+    display: flex;
+}
+button.secondary img{
+    height: 24px;
+
+}
+button.secondary:hover{
+
+    filter: brightness(1.1);
+}
