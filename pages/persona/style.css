@@ -28,6 +28,7 @@ h3{
 label{
     margin: 8px 0 0 4px;
     color: white;
+    display: none;
 
 }
 input, textarea{

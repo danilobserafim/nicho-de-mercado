@@ -6,48 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../globals.css">
+    <script src="./persona.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <h2>público alvo</h2>
+<body onload="focusName()">
+    <h2 id="title">público alvo</h2>
     <h3>Buyer persona</h3>
 
-    <div id="form">
+    <form action="http://127.0.0.1:3000/persona" method="post" id="form">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
 
         <label for="idade">Idade</label>
-        <input type="number" name="idade" id="idade">
+        <input type="number" name="idade" id="idade" placeholder="Idade">
 
-        <label for="classeSocial">Classe social</label>
-        <input type="text" name="classeSocial" id="classeSocial">
+        <label for="classe">Classe social</label>
+        <input type="text" name="classe" id="classe" placeholder="Classe social">
 
-        <label for="PAIpais">País</label>
-        <input type="text" name="pais" id="pais">
+        <label for="pais">País</label>
+        <input type="text" name="pais" id="pais" placeholder="País">
 
         <label for="Localidade">localidade</label>
-        <input type="text" name="localidade" id="localidade">
+        <input type="text" name="localidade" id="localidade" placeholder="localidade">
 
         <label for="formacao">Formação</label>
-        <input type="text" name="formacao" id="formacao">
+        <input type="text" name="formacao" id="formacao" placeholder="Formação">
 
         <label for="profissao">Profissão</label>
-        <input type="text" name="profissao" id="profissao">
+        <input type="text" name="profissao" id="profissao" placeholder="Profissão">
 
         <label for="necessidades">Dores e Necessidades</label>
-        <textarea rows="10" type="text" name="necessidades" id="necessidades"></textarea>
+        <textarea rows="10" type="text" name="necessidades" id="necessidades" placeholder="Necessidades"></textarea>
         <small id="smallRight">* Para campos de várias linhas use (. ) para (• )</small>
 
         <label for="solucoes">Possiveis soluções</label>
-        <textarea rows="10" type="text" name="solucoes" id="solucoes"></textarea>
+        <textarea rows="10" type="text" name="solucoes" id="solucoes" placeholder="Soluções"></textarea>
         <small id="smallRight">* Para campos de várias linhas use (. ) para (• )</small>
 
 
 
         
         <div id="groupButtons">
-            <button class="primary">Adicionar</button><button class="secondary">Próximo <img src="../../assets/icons/arrow_forward.png" alt="Arrow next"></button>
+            <button class="primary">Adicionar</button>
         </div>
-    </div>
+    </form>
 </body>
 </html>
